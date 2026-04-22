@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6</title>
+    <link rel="stylesheet" href="/clase 6/styles.css">
+</head>
+<body>
+    <h1>Botones</h1>
+    <form>
+        <div class="mb-3" id="contenedor1">
+            <label for="exampleInputEmail1" class="form-label" id="form-label1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email ">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3" id="contenedor2">
+            <label for="exampleInputPassword1" class="form-label" id="form-label2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu contraseña">
+        </div>
+        <div class="mb-3 form-check" id="contenedor3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1" id="form-label3">Check me out</label>
+        </div>
+        <h2>Selecciona un curso</h2>
+        <select id="selectCurso">
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+        <div id="contenedor4">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+
+        <h1>Proxima clase continuaremos con eventListeners</h1>
+
+    </form>
+    <h3>Boton 1</h3>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <!-- opción multiple, scroll o desplegable. 
+    Evento resize, comentario con maximo de caracteres
+    keyup, keydown. Para saber email y contraseña
+    focus
+    blur
+    drag and drop (enviar archivo)
+    -->
+    <h3>Boton link</h3>
+    <a href="https://www.mendozashopping.com/" class="btn btn-outline-info" tabindex="-1" role="button" aria-disabled="true" target="_blank">Visit Shopping</a>
+
+    <p id="parrafo">Resultado</p>
+    <script src="script.js"></script>
+</body>
+</html>

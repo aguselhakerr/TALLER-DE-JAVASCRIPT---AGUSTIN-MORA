@@ -1,0 +1,74 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    border: #2f2b2b solid 2px;
+}
+
+#contenedor1{
+    background-color: #8b6767;
+    margin-bottom: 15px;
+}
+
+#contenedor2{
+    background-color: #cdc13e;
+    margin-bottom: 15px;
+}
+
+#contenedor3{
+    background-color: #38ab5e;
+    margin-bottom: 15px;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-control{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.form-text{
+    font-size: 10px;
+}
+
+.btn-secondary{
+    background-color: #c3d6ea;
+    color: rgb(55, 39, 39);
+    padding: 10px 20px;
+    border: solid #2f2b2b 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.btn-primary{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: solid #2f2b2b 1px;
+    border-radius: 4px;   
+}
+
+.btn-primary:hover{
+    background-color: #024fa0;
+    color: white;
+}
+.btn-secondary:hover{
+    background-color: #93a4b7;
+    color: rgb(55, 39, 39);
+}
+#contenedor4{
+    text-align: center;
+}

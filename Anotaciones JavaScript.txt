@@ -1,0 +1,61 @@
+JS
+
+17/3/2026
+CLASE 1
+
+HTML: estructura
+
+CSS: estilo y diseño visual
+
+JS: Interactividad y lógica
+
+JavaScript puede: - Manipular el DOM (Document Object Model) para modificar el contenido de una página web
+                  - Responder a eventos como clics del usuario o mivimientos del ratón
+                  - Validar formularios, crear animaciones, entre muchas otras funciones.
+
+HTML:5 o ! en VSC
+
+w3school = Muy bueno para practicar
+
+
+
+7/4/2026
+
+document.querySelector = filtra por atributos
+
+
+14/4/2026
+
+clase 6
+enrutamiento y navegación con react.router
+
+npm install react-router-dom
+
+el enrutamiento emula cambiar paginas (enrutamiento virtual)
+
+importar en el main:
+import { React, StrictMode } from 'react'
+import { ReactDOM, createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+
+importar en App:
+import { Routes, Route, Link } from 'react-router-dom';
+import Inicio from './paginas/Inicio';
+import Nosotros from './paginas/Nosotros';
+import DetallePersonaje from './paginas/DetallePersonaje';
+
+crear DetallePersonaje e importar:
+import { useParams } from 'react-router-dom'
+
+
+Movemos toda la página a la sección "Inicio"
+
+
+{/* RUTA POR DEFECTO */}
+                    <Route path="*" element={
+                        <div style={{textAlign:'center',marginTop:'50px'}}>
+                            <h2>Error 727</h2>
+                            <p>Lol... La pagina que buscas no existe.</p>
+                            <Link to="/">Volver al inicio</Link>
+                        </div>
+                    }/>
