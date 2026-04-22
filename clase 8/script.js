@@ -171,3 +171,79 @@ function calcularTotal(){
     return total;
 };
 console.log("\nTotal de precio: "+calcularTotal());
+
+
+
+console.log("\n\n\n --- EJERCICIOS --- \n\n\n");
+
+console.log("\n1) Crea un arreglo con 5 números y muestra el tercero en consola.");
+const arreglo1 = [1,2,3,4,5];
+console.log(arreglo1);
+console.log(arreglo1[2]);
+
+console.log("\n2) Agrega un nuevo elemento a un arreglo usando push.");
+arreglo1.push(6);
+console.log(arreglo1);
+
+console.log("\n3) Elimina el último elemento de un arreglo y muéstralo en consola.");
+console.log("Se eliminó el número: "+arreglo1.pop());
+console.log(arreglo1);
+
+
+console.log("\n4) Usa map para multiplicar por 2 cada número de un arreglo.");
+console.log(arreglo1.map(multiplicarPorDos));
+function multiplicarPorDos(num){
+    return num*2;
+};
+
+console.log("\n5) Filtra un arreglo para obtener solo los números mayores a 10.");
+arreglo1.push(10,11,12,13,14,15);
+console.log(arreglo1);
+console.log("Números mayores a 10:\n"+arreglo1.filter(numeroMayorADiez).join(" - "));
+function numeroMayorADiez(num){
+    if (num>10){
+        return num;
+    };
+};
+
+console.log("\n6) Declara un objeto con las propiedades nombre, edad, y profesión.");
+const empleado = {
+    nombre: "Agustín",
+    edad: "20",
+    profesion: "Hacker"
+};
+console.log(empleado);
+
+console.log("\n7) Accede y muestra el valor de una propiedad de un objeto.");
+console.log("Nombre: ",empleado.nombre);
+
+console.log("\n8) Agrega un método a un objeto que devuelva un saludo personalizado.");
+empleado.saludar = function(){ // Esto se podría poner directamente en la llamada de la linea 224
+    return `Hola mi nombre es ${this.nombre} y tengo ${this.edad} años. Actualmente estoy trabajando como ${this.profesion} en una empresa internacional!`;
+};
+console.log(empleado.saludar()); // Aca se podría poner directamente la función
+
+console.log("\n9) Usa reduce para sumar todos los números de un arreglo.");
+console.log(arreglo1);
+// Se puede poner la función directamente
+console.log("La suma de los numeros del arreglo da: "+arreglo1.reduce(function(total,num){
+    return total+num
+}));
+
+console.log("\n10) Combina arreglos y objetos: Crea un arreglo de objetos y recórrelo para mostrar el nombre de cada elemento.");
+const celulares = [
+    {nombre:"Samsung S25",precio:1200},
+    {nombre:"Iphone 17",precio:1250},
+    {nombre:"Moto edge 70 fusion",precio:750}
+];
+function mostrarNombresCelulares(){ 
+    for (let i =0; i<celulares.length;i++){
+        console.log("Nombre: "+celulares[i].nombre);
+    };
+}
+mostrarNombresCelulares();
+console.log("\nAgregamos un nuevo celular al final de la lista.");
+celulares.push({nombre:"Google pixel 10",precio:900});
+mostrarNombresCelulares();
+console.log(celulares);
+
